@@ -113,6 +113,8 @@
   cursor: pointer;
 }
 
+/* responsive */
+
 /* may tinh bang */
 @media only screen and (min-width:46.25em) and (max-width :63.9375em) {
     .input-email ,
@@ -149,6 +151,11 @@
         width: 10%;
         
     }
+
+    .container {
+        height: 89%;
+        width: 80%;
+    }
 }
 
 /* mobile */
@@ -158,6 +165,10 @@
        
     }
 
+    .container {
+        height: 89%;
+        width: 80%;
+    }
     
 
     .text {
@@ -174,6 +185,7 @@
     }
 
     .list {
+        display: block !important;
         font-size: 2rem;
         align-items: center;
         display: flex;
@@ -221,13 +233,13 @@
     }
 
     .close-icon {
-        display: block;
+        display: block !important;
     }
 
     .social__mobile {
         margin-top: 48px;
         text-decoration: none;
-        display: block;
+        display: block !important;
     }
 
     .social__nav--mobile-icon a {
@@ -250,6 +262,7 @@
     .nav__input:checked ~  .nav__overlay-mobile {
       transform: translateX(0);
       opacity: 1;
+      z-index: 2;
     }
 
     @keyframes fadeIn {
@@ -315,5 +328,9 @@
         margin-left: 4px;
         margin-right: 4px;
     }
-
+    .bars-icon {
+          display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
 }
