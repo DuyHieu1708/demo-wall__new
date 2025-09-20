@@ -338,6 +338,11 @@
     color: #333;
 }
 
+.social-icon:hover a {
+    border-bottom: 3px solid #fff;
+    padding-bottom: 22px;
+}
+
 /* login */
 .container {
     position: absolute;
@@ -405,6 +410,7 @@
     border: 1px solid #ccc;
     margin-bottom: -40px;
     margin-left: 8px;
+    cursor: pointer;
 }
 
 .facebook-icon ,
@@ -437,4 +443,3 @@
     
 }
 
-/* đăng ký */
